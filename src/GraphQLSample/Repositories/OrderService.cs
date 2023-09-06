@@ -22,9 +22,9 @@ namespace GraphQLSample.Repositories
             return await dbContextClass.Orders.Where(ele => ele.orderId == orderId).FirstOrDefaultAsync();
         }
 
-        public async Task<bool> AddOrderAsync(Orders Users)
+        public async Task<bool> AddOrderAsync(Orders orders)
         {
-            await dbContextClass.Orders.AddAsync(Users);
+            await dbContextClass.Orders.AddAsync(orders);
             var result = await dbContextClass.SaveChangesAsync();
             if (result > 0)
             {
@@ -36,12 +36,12 @@ namespace GraphQLSample.Repositories
             }
         }
 
-        public async Task<bool> UpdateOrderAsync(Orders Users)
+        public async Task<bool> UpdateOrderAsync(Orders orders)
         {
-            var isProduct = UsersExists(Users.orderId);
+            var isProduct = IsOrderExists(orders.orderId);
             if (isProduct)
             {
-                dbContextClass.Orders.Update(Users);
+                dbContextClass.Orders.Update(orders);
                 var result = await dbContextClass.SaveChangesAsync();
                 if (result > 0)
                 {
@@ -74,7 +74,7 @@ namespace GraphQLSample.Repositories
             return false;
         }
 
-        private bool UsersExists(Guid orderId)
+        private bool IsOrderExists(Guid orderId)
         {
             return dbContextClass.Orders.Any(e => e.orderId == orderId);
         }

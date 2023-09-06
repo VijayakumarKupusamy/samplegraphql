@@ -2027,13 +2027,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VIJAYAKUMAR-PC\\Downloads\\GraphQLSample-20230906T163836Z-001\\GraphQLSample\\GraphQLSample\\GraphQLSample.csproj",
+      "projectUniqueName": "E:\\orgs\\github\\samplegraphql\\src\\GraphQLSample\\GraphQLSample.csproj",
       "projectName": "GraphQLSample",
-      "projectPath": "C:\\Users\\VIJAYAKUMAR-PC\\Downloads\\GraphQLSample-20230906T163836Z-001\\GraphQLSample\\GraphQLSample\\GraphQLSample.csproj",
+      "projectPath": "E:\\orgs\\github\\samplegraphql\\src\\GraphQLSample\\GraphQLSample.csproj",
       "packagesPath": "C:\\Users\\VIJAYAKUMAR-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VIJAYAKUMAR-PC\\Downloads\\GraphQLSample-20230906T163836Z-001\\GraphQLSample\\GraphQLSample\\obj\\",
+      "outputPath": "E:\\orgs\\github\\samplegraphql\\src\\GraphQLSample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "E:\\NuGet.Config",
         "C:\\Users\\VIJAYAKUMAR-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2041,10 +2042,7 @@
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "E:\\orgs\\zerofence\\Core\\coreservices\\nupkgs": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://zerofence.pkgs.visualstudio.com/Engg/_packaging/pkgs/nuget/v3/index.json": {},
         "https://zerofence.pkgs.visualstudio.com/_packaging/zf-pkg-repo/nuget/v3/index.json": {}
       },
       "frameworks": {
